@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Notes App</string>
-    <string name="app_title">Notes</string>
-    <string name="search">Search</string>
+    <string name="notes">Notes</string>
+    <string name="schedule">Schedule</string>
+    <string name="journal">Journal</string>
+    <string name="search">Search your notes</string>
     <string name="edit">Edit</string>
     <string name="done">done</string>
     <string name="heading">Heading</string>
@@ -9,6 +11,18 @@
     <string name="date">xx/xx/xx</string>
     <string name="title">Title</string>
     <string name="typing">Start typing</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email_1">E-Mail</string>
+    <string name="email_2">E-mail Address</string>
+    <string name="password">Password</string>
+    <string name="c_password">Confirm Password</string>
+    <string name="forgot_pw_1">Forgot password? </string>
+    <string name="forgot_pw_2"><u>Click here</u></string>
+    <string name="dont_account_1">Dont have an account yet? </string>
+    <string name="dont_account_2"><u>Sign up</u></string>
+    <string name="allreaddy_account_1">Already have an account? </string>
+    <string name="allreaddy_account_2"><u>Login</u></string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
