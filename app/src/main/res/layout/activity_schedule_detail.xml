@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ScheduleDetailAct">
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="5dp"
+                android:layout_toRightOf="@id/back_btn"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/notes"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/undo_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/redo_btn"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_baseline_undo_24" />
+
+            <ImageButton
+                android:id="@+id/redo_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="8dp"
+                android:layout_toLeftOf="@+id/done_btn"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_baseline_redo_24" />
+
+            <Button
+                android:id="@+id/done_btn"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/rounded_corner_stroke"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/done"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="15dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/input_title"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/montserrat_bold"
+                android:hint="@string/title"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/date"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/input_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="@string/notes"
+                android:gravity="top"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/set_schedule_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:text="@string/add_schedule"
+                android:fontFamily="@font/montserrat_medium"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_alarm_24"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:background="@drawable/button_2"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blue_1">
+
+            <ImageButton
+                android:id="@+id/delete_btn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_baseline_delete_outline_24" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>
